@@ -1,9 +1,13 @@
 from flask import Flask
+
 app = Flask(__name__)
 
-@app.route('/')
-def hello():
-    return "こんにちはこれはRenderで動いてるFlaskアプリです。"
+@app.route("/")
+def home():
+    return "こんにちは、これはRenderで動いてるFlaskアプリです！"
 
-# if __name__ == '__main__':
-#     app.run()
+@app.route("/a")
+def hello():
+    return "これは /a ページです。"
+
+# Renderでは gunicorn が起動するので app.run() は不要
