@@ -5,5 +5,5 @@ app = Flask(__name__)
 def hello():
     return "こんにちはこれはRenderで動いてるFlaskアプリです。"
 
-if __name__ == '__main__':
-    app.run()
+# if __name__ == '__main__':
+#     app.run()
