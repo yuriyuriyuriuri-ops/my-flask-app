@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return """こんにちは、これはFlaskアプリです！
+    return """
             <style>
             a {
             color: blue; /* 通常時の色 */
@@ -16,6 +16,7 @@ def home():
             color: red; /* ホバー時の色 */
             }
             </style>
+            <p>こんにちは、これはFlaskアプリです！</p>
             <h1>FlaskでのWebページ</h1>
                 <h2 style="color : orange;">こんにちは</h2>
                 <p><a href="https://my-flask-app-production-bf54.up.railway.app/a">さようなら</a></p>
@@ -23,7 +24,7 @@ def home():
 
 @app.route("/a")
 def hello():
-    return """これは /a ページです。
+    return """
             <style>
             a {
             color: blue; /* 通常時の色 */
@@ -34,6 +35,7 @@ def hello():
             color: red; /* ホバー時の色 */
             }
             </style>
+            <p>これは /a ページです。</p>
             <h1>FlaskでのWebページ2</h1>
                 <h2 style="color : indigo;">さようなら</h2>
                 <a><a href="https://my-flask-app-production-bf54.up.railway.app/">こんにちは</a></p>"""
