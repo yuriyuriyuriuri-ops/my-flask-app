@@ -13,6 +13,7 @@ client = OpenAI(api_key = os.environ["OPENAI_API_KEY"])
 @app.route("/")
 def home():
     return """
+            <title>Flaskテスト</title>
             <style>
             a {
             color: blue; /* 通常時の色 */
@@ -110,6 +111,7 @@ def chat():
         ai_reply = responseGPT.choices[0].message.content
 
         return f"""
+            <title>FlaskChatGPTテスト</title>
             <h1>デバッグ用 ChatGPT <font color="cyan">gpt</font></h1>
             <form method="POST">
                 <select name="model">
@@ -137,6 +139,7 @@ def chat():
 
     # GET のとき（最初の画面）
     return """
+        <title>FlaskChatGPTテスト</title>
         <h1>デバッグ用 ChatGPT <font color="cyan">gpt</font></h1>
         <form method="POST">
             <select name="model">
