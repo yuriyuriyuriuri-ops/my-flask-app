@@ -99,6 +99,9 @@ def chat():
             ]
         else:
             messages = [
+                {"role": "system", "content": 
+                    """System: /"。/"の後は改行してください。
+                    ユーザーの文章: """},
                 {"role": "user", "content": user_text}
             ]
 
