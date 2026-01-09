@@ -114,16 +114,16 @@ def chat():
                 <label><input type="radio" name="mode" value="normal" {"checked" if mode=="normal" else ""}> 通常モード</label>
                 <label><input type="radio" name="mode" value="quiz" {"checked" if mode=="quiz" else ""}> クイズモード</label><br><br>
 
-                <textarea name="text" placeholder="メッセージを入力" style="width:300px;" rows="4" cols="50"{user_text}></textarea>
+                <textarea name="text" placeholder="メッセージを入力" style="width:300px;" rows="4" cols="50">{user_text}></textarea>
 
-                <button type="submit">送信</button>
+                <button type="submit" style="font-size:20px; padding:10px 20px;">送信</button>
             </form>
             <p><b>あなた:</b> {user_text}</p>
             <p><b>AI:</b> {ai_reply}</p>
-            <p color="green">このChatGPTは記憶を行っていません。</p>
+            <p><font color="green">このChatGPTは記憶を行っていません。</font></p>
             <p><a href="/chat">リセットする</a></p>
             <form action="https://my-flask-app-production-56cf.up.railway.app">
-            <button type="submit">戻る</button>
+            <button type="submit" style="font-size:20px; padding:10px 20px;">ホームへ戻る</button>
             </form>
         """
 
@@ -136,10 +136,10 @@ def chat():
 
             <textarea name="text" placeholder="メッセージを入力" style="width:300px;" rows="4" cols="50"></textarea>
 
-            <button type="submit">送信</button>
+            <button type="submit" style="font-size:20px; padding:10px 20px;">送信</button>
         </form>
-        <p color="green">このChatGPTは記憶を行っていません。</p>
+        <p><font color="green">このChatGPTは記憶を行っていません。</font></p>
         <form action="https://my-flask-app-production-56cf.up.railway.app">
-        <button type="submit">戻る</button>
+        <button type="submit" style="font-size:20px; padding:10px 20px;">ホームへ戻る</button>
         </form>
     """
