@@ -84,12 +84,12 @@ def chat():
     if request.method == "POST":
         user_text = request.form.get("text", "")
 
-        response = client.chat.completions.create(
+        responseGPT = client.chat.completions.create(
             model="gpt-4o-mini",
             messages=[{"role": "user", "content": user_text}]
         )
 
-        ai_reply = response.choices[0].message["content"]
+        ai_reply = responseGPT.choices[0].message["content"]
 
         return f"""
             <h1>デバッグ用 ChatGPT</h1>
