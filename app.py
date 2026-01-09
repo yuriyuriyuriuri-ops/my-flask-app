@@ -102,7 +102,7 @@ def chat():
 
 
         responseGPT = client.chat.completions.create(
-            model="gpt-4o",
+            model="gpt-4",
             messages=messages
         )
 
