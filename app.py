@@ -39,5 +39,3 @@ def hello():
             <h1>FlaskでのWebページ2</h1>
                 <h2 style="color : indigo;">さようなら</h2>
                 <a><a href="https://my-flask-app-production-bf54.up.railway.app/">こんにちは</a></p>"""
-
-app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
