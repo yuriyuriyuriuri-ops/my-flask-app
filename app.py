@@ -19,7 +19,7 @@ def home():
             <p>こんにちは、これはFlaskアプリです！</p>
             <h1>FlaskでのWebページ</h1>
                 <h2 style="color : orange;">こんにちは</h2>
-                <p><a href="my-flask-app-production-56cf.up.railway.app/a">さようなら</a></p>
+                <p><a href="https://my-flask-app-production-56cf.up.railway.app/a">さようなら</a></p>
             """
 
 @app.route("/a")
