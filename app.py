@@ -26,7 +26,7 @@ def home():
             <p>こんにちは、これはFlaskアプリです！</p>
             <h1>FlaskでのWebページ</h1>
                 <h2 style="color : orange;">こんにちは</h2>
-                <h2><a href="https://my-flask-app-production-56cf.up.railway.app/a">ChatGPTと会話</a></h2>
+                <h2><a href="https://my-flask-app-production-56cf.up.railway.app/chat">ChatGPTと会話</a></h2>
                 <p><a href="https://my-flask-app-production-56cf.up.railway.app/a">さようなら</a></p>
             """
 #デフォルトのサイト
