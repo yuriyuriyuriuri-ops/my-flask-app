@@ -127,10 +127,13 @@ def chat():
 
                 <button type="submit" style="font-size:20px; padding:10px 20px;">送信</button>
             </form>
-            <p><b>あなた:</b> {user_text}</p>
-            <p><b>AI:</b> <pre>{ai_reply}</pre></p>
+
+            <p><b>あなた:</b><span style="font-size:15px;">{user_text}</span></p>
+            <p><b>AI:</b></p><pre style="color:navy; font-size:15px;">{ai_reply}</pre>
+
             <p><font color="green">このChatGPTは記憶を行っていません。</font></p>
             <p><font color="blue">クイズはJSON形式で返却されます。</font></p>
+
             <p><a href="/chat">リセットする</a></p>
             <form action="https://my-flask-app-production-56cf.up.railway.app">
             <button type="submit" style="font-size:20px; padding:10px 20px;">ホームへ戻る</button>
