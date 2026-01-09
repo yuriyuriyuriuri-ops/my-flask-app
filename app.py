@@ -93,6 +93,7 @@ def chat():
 
         return f"""
             <h1>デバッグ用 ChatGPT</h1>
+            <a><a href="https://my-flask-app-production-56cf.up.railway.app/">戻る</a></p>
             <form method="POST">
                 <input type="text" name="text" value="{user_text}" style="width:300px;">
                 <button type="submit">送信</button>
