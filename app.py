@@ -93,7 +93,6 @@ def chat():
 
         return f"""
             <h1>デバッグ用 ChatGPT</h1>
-            <a><a href="https://my-flask-app-production-56cf.up.railway.app/">戻る</a></p>
             <form method="POST">
                 <input type="text" name="text" value="{user_text}" style="width:300px;">
                 <button type="submit">送信</button>
@@ -101,6 +100,7 @@ def chat():
             <p><b>あなた:</b> {user_text}</p>
             <p><b>AI:</b> {ai_reply}</p>
             <p><a href="/chat">リセット</a></p>
+            <a><a href="https://my-flask-app-production-56cf.up.railway.app/">戻る</a></p>
         """
 
     # GET のとき（最初の画面）
@@ -110,4 +110,5 @@ def chat():
             <input type="text" name="text" placeholder="メッセージを入力" style="width:300px;">
             <button type="submit">送信</button>
         </form>
+        <a><a href="https://my-flask-app-production-56cf.up.railway.app/">戻る</a></p>
     """
