@@ -111,7 +111,7 @@ def chat():
         return f"""
             <h1>デバッグ用 ChatGPT</h1>
             <form method="POST">
-                <input type="text" name="text" value="{user_text}" style="width:300px;">
+                <textarea name="text" placeholder="メッセージを入力" style="width:300px;" rows="4" cols="50"{user_text}></textarea>
 
                 <label><input type="radio" name="mode" value="normal" {"checked" if mode=="normal" else ""}> 通常モード</label>
                 <label><input type="radio" name="mode" value="quiz" {"checked" if mode=="quiz" else ""}> クイズモード</label><br><br>
@@ -131,7 +131,7 @@ def chat():
     return """
         <h1>デバッグ用 ChatGPT</h1>
         <form method="POST">
-            <input type="text" name="text" placeholder="メッセージを入力" style="width:300px;">
+            <textarea name="text" placeholder="メッセージを入力" style="width:300px;" rows="4" cols="50"></textarea>
 
             <label><input type="radio" name="mode" value="normal" checked> 通常モード</label>
             <label><input type="radio" name="mode" value="quiz"> クイズモード</label><br><br>
