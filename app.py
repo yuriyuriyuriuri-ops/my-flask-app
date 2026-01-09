@@ -113,9 +113,9 @@ def chat():
             <h1>デバッグ用 ChatGPT <font color="cyan">gpt</font></h1>
             <form method="POST">
                 <select name="model">
+                    <option value="gpt-4o-mini" {"selected" if model=="gpt-4o-mini" else ""}>gpt-4o-mini</option>
                     <option value="gpt-4" {"selected" if model=="gpt-4" else ""}>gpt-4</option>
                     <option value="gpt-4o" {"selected" if model=="gpt-4o" else ""}>gpt-4o</option>
-                    <option value="gpt-4o-mini" {"selected" if model=="gpt-4o-mini" else ""}>gpt-4o-mini</option>
                 </select>
 
                 <label><input type="radio" name="mode" value="normal" {"checked" if mode=="normal" else ""}> 通常モード</label>
@@ -140,9 +140,9 @@ def chat():
         <h1>デバッグ用 ChatGPT <font color="cyan">gpt</font></h1>
         <form method="POST">
             <select name="model">
+                <option value="gpt-4o-mini" {"selected" if model=="gpt-4o-mini" else ""}>gpt-4o-mini</option>
                 <option value="gpt-4" {"selected" if model=="gpt-4" else ""}>gpt-4</option>
                 <option value="gpt-4o" {"selected" if model=="gpt-4o" else ""}>gpt-4o</option>
-                <option value="gpt-4o-mini" {"selected" if model=="gpt-4o-mini" else ""}>gpt-4o-mini</option>
             </select>
 
             <label><input type="radio" name="mode" value="normal" checked> 通常モード</label>
