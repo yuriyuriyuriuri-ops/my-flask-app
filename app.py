@@ -114,7 +114,7 @@ def chat():
                 <label><input type="radio" name="mode" value="normal" {"checked" if mode=="normal" else ""}> 通常モード</label>
                 <label><input type="radio" name="mode" value="quiz" {"checked" if mode=="quiz" else ""}> クイズモード</label><br><br>
 
-                <textarea name="text" placeholder="メッセージを入力" style="width:300px;" rows="4" cols="50">{user_text}></textarea>
+                <textarea name="text" placeholder="メッセージを入力" style="width:300px;" rows="4" cols="50">{user_text}</textarea>
 
                 <button type="submit" style="font-size:20px; padding:10px 20px;">送信</button>
             </form>
