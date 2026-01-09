@@ -119,7 +119,7 @@ def chat():
                 <button type="submit" style="font-size:20px; padding:10px 20px;">送信</button>
             </form>
             <p><b>あなた:</b> {user_text}</p>
-            <p><b>AI:</b> {ai_reply}</p>
+            <p><b>AI:</b> <pre>{ai_reply}</pre></p>
             <p><font color="green">このChatGPTは記憶を行っていません。</font></p>
             <p><font color="blue">クイズはJSON形式で返却されます。</font></p>
             <p><a href="/chat">リセットする</a></p>
