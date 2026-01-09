@@ -100,7 +100,8 @@ def chat():
             <p><b>あなた:</b> {user_text}</p>
             <p><b>AI:</b> {ai_reply}</p>
             <p><a href="/chat">リセット</a></p>
-            <a><a href="https://my-flask-app-production-56cf.up.railway.app/">戻る</a></p>
+            <form action="https://my-flask-app-production-56cf.up.railway.app/">
+            <button type="submit">戻る</button>
         """
 
     # GET のとき（最初の画面）
@@ -110,5 +111,6 @@ def chat():
             <input type="text" name="text" placeholder="メッセージを入力" style="width:300px;">
             <button type="submit">送信</button>
         </form>
-        <a><a href="https://my-flask-app-production-56cf.up.railway.app/">戻る</a></p>
+        <form action="https://my-flask-app-production-56cf.up.railway.app/">
+        <button type="submit">戻る</button>
     """
