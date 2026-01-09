@@ -86,7 +86,14 @@ def chat():
 
         responseGPT = client.chat.completions.create(
             model="gpt-4o-mini",
-            messages=[{"role": "user", "content": user_text}]
+            messages=[
+                {"role": "system", "content": """あなたはクイズ作成AIです。ユーザーの入力に応じてクイズを生成してください。
+                ユーザーから受け取った文章を元に、文章に関連づいたクイズを生成してください。
+                ユーザーが間違えている部分があれば、解説で教えてあげてください。
+                Json {/"問題/", /"選択肢/"(1つ から 4つ), /"答え/"(1つ), /"解説/"} のデータを作って出力してください。
+                ユーザーの文章:/"
+                """},
+                {"role": "user", "content": user_text}]
         )
 
         ai_reply = responseGPT.choices[0].message.content
