@@ -89,7 +89,7 @@ def chat():
             messages=[{"role": "user", "content": user_text}]
         )
 
-        ai_reply = responseGPT.choices[0].message["content"]
+        ai_reply = responseGPT.choices[0].message.content
 
         return f"""
             <h1>デバッグ用 ChatGPT</h1>
