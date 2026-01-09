@@ -109,7 +109,7 @@ def chat():
         ai_reply = responseGPT.choices[0].message.content
 
         return f"""
-            <h1>デバッグ用 ChatGPT <font color="cian">gpt-4o</font></h1>
+            <h1>デバッグ用 ChatGPT <font color="cyan">gpt-4o</font></h1>
             <form method="POST">
                 <label><input type="radio" name="mode" value="normal" {"checked" if mode=="normal" else ""}> 通常モード</label>
                 <label><input type="radio" name="mode" value="quiz" {"checked" if mode=="quiz" else ""}> クイズモード</label><br><br>
@@ -130,7 +130,7 @@ def chat():
 
     # GET のとき（最初の画面）
     return """
-        <h1>デバッグ用 ChatGPT <font color="cian">gpt-4o</font></h1>
+        <h1>デバッグ用 ChatGPT <font color="cyan">gpt-4o</font></h1>
         <form method="POST">
             <label><input type="radio" name="mode" value="normal" checked> 通常モード</label>
             <label><input type="radio" name="mode" value="quiz"> クイズモード</label><br><br>
