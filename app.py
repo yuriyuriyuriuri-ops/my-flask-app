@@ -38,4 +38,4 @@ def hello():
             <p>これは /a ページです。</p>
             <h1>FlaskでのWebページ2</h1>
                 <h2 style="color : indigo;">さようなら</h2>
-                <a><a href="my-flask-app-production-56cf.up.railway.app/">こんにちは</a></p>"""
+                <a><a href="https://my-flask-app-production-56cf.up.railway.app/">こんにちは</a></p>"""
