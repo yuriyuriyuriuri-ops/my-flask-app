@@ -124,6 +124,7 @@ def chat():
             <p><a href="/chat">リセットする</a></p>
             <form action="https://my-flask-app-production-56cf.up.railway.app/">
             <button type="submit">戻る</button>
+            </form>
         """
 
     # GET のとき（最初の画面）
@@ -133,11 +134,12 @@ def chat():
             <input type="text" name="text" placeholder="メッセージを入力" style="width:300px;">
 
             <label><input type="radio" name="mode" value="normal" checked> 通常モード</label>
-            <label><input type="radio" name="mode" value="quiz> クイズモード</label><br><br>
+            <label><input type="radio" name="mode" value="quiz"> クイズモード</label><br><br>
 
             <button type="submit">送信</button>
         </form>
         <p>このChatGPTは記憶を行っていません。</p>
         <form action="https://my-flask-app-production-56cf.up.railway.app/">
         <button type="submit">戻る</button>
+        </form>
     """
