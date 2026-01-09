@@ -120,7 +120,7 @@ def chat():
             </form>
             <p><b>あなた:</b> {user_text}</p>
             <p><b>AI:</b> {ai_reply}</p>
-            <p>このChatGPTは記憶を行っていません。</p>
+            <p color="green">このChatGPTは記憶を行っていません。</p>
             <p><a href="/chat">リセットする</a></p>
             <form action="https://my-flask-app-production-56cf.up.railway.app/">
             <button type="submit">戻る</button>
@@ -138,7 +138,7 @@ def chat():
 
             <button type="submit">送信</button>
         </form>
-        <p>このChatGPTは記憶を行っていません。</p>
+        <p color="green">このChatGPTは記憶を行っていません。</p>
         <form action="https://my-flask-app-production-56cf.up.railway.app/">
         <button type="submit">戻る</button>
         </form>
