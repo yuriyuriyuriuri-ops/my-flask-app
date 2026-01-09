@@ -61,7 +61,7 @@ def receive():
 #データ返却テスト
 
 @app.route("/receiveGPT", methods=["POST"])
-def receive():
+def receiveGPT():
     user_text = request.get_data(as_text=True)
 
     # ChatGPT に送る
