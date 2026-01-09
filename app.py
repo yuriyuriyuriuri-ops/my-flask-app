@@ -84,6 +84,7 @@ def chat():
     if request.method == "POST":
         user_text = request.form.get("text", "")
         mode = request.form.get("mode", "normal")  # ← モード取得
+        model = request.form.get("model", "gpt-4o-mini")  # ← モード取得
 
         if mode == "quiz":
             messages = [
@@ -102,15 +103,21 @@ def chat():
 
 
         responseGPT = client.chat.completions.create(
-            model="gpt-4o-mini",
+            model=model,
             messages=messages
         )
 
         ai_reply = responseGPT.choices[0].message.content
 
         return f"""
-            <h1>デバッグ用 ChatGPT <font color="cyan">gpt-4o-mini</font></h1>
+            <h1>デバッグ用 ChatGPT <font color="cyan">gpt</font></h1>
             <form method="POST">
+                <select name="model">
+                    <option value="gpt-4" {"selected" if model=="gpt-4" else ""}>gpt-4</option>
+                    <option value="gpt-4o" {"selected" if model=="gpt-4o" else ""}>gpt-4o</option>
+                    <option value="gpt-4o-mini" {"selected" if model=="gpt-4o-mini" else ""}>gpt-4o-mini</option>
+                </select>
+
                 <label><input type="radio" name="mode" value="normal" {"checked" if mode=="normal" else ""}> 通常モード</label>
                 <label><input type="radio" name="mode" value="quiz" {"checked" if mode=="quiz" else ""}> クイズモード</label><br><br>
 
@@ -130,8 +137,14 @@ def chat():
 
     # GET のとき（最初の画面）
     return """
-        <h1>デバッグ用 ChatGPT <font color="cyan">gpt-4o-mini</font></h1>
+        <h1>デバッグ用 ChatGPT <font color="cyan">gpt</font></h1>
         <form method="POST">
+            <select name="model">
+                <option value="gpt-4" {"selected" if model=="gpt-4" else ""}>gpt-4</option>
+                <option value="gpt-4o" {"selected" if model=="gpt-4o" else ""}>gpt-4o</option>
+                <option value="gpt-4o-mini" {"selected" if model=="gpt-4o-mini" else ""}>gpt-4o-mini</option>
+            </select>
+
             <label><input type="radio" name="mode" value="normal" checked> 通常モード</label>
             <label><input type="radio" name="mode" value="quiz"> クイズモード</label><br><br>
 
